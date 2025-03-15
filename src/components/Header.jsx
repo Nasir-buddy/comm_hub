@@ -35,13 +35,13 @@ const Header = () => {
             <Calendar className="h-5 w-5" />
             <span>Events</span>
           </Link>
-          <Link
+          {/* <Link
             to="/about"
             className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors"
           >
             <Info className="h-5 w-5" />
             <span>About</span>
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -80,13 +80,13 @@ const Header = () => {
               >
                 Events
               </Link>
-              <Link
+              {/* <Link
                 to="/about"
                 className="block text-gray-600 hover:text-blue-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 About
-              </Link>
+              </Link> */}
             </nav>
           </motion.div>
         )}
