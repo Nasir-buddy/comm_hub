@@ -87,8 +87,8 @@ const Hero = () => {
             ))}
           </div>
 
-          {/* CTA Button for larger screens: Inline */}
-          <div className="hidden sm:flex justify-center">
+          {/* CTA Button: Inline for all screen sizes */}
+          <div className="flex justify-center mb-10">
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255,255,255,0.3)" }}
               whileTap={{ scale: 0.95 }}
@@ -100,24 +100,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* CTA Button for mobile: Fixed at bottom */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="sm:hidden fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 w-full px-4"
-      >
-        <motion.button
-          whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255,255,255,0.3)" }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => navigate('/events')}
-          className="bg-yellow-400 text-blue-900 w-full px-6 py-3 rounded-full text-lg font-bold shadow-xl hover:bg-yellow-300 transition-colors"
-        >
-          Explore Events
-        </motion.button>
-      </motion.div>
-
 
       {/* Decorative Elements - hidden on extra-small screens */}
       <motion.div
