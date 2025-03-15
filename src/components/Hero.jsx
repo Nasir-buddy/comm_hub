@@ -102,6 +102,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative Elements - hidden on extra-small screens */}
+      
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
